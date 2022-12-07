@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+	background: red;
+}
+.animation {
+    position: absolute;
+	height: 15px;
+	width: 15px;
+	top: 0%;
+	left: 50%;
+	border-radius: 50px;
+	background: rgba(255,255,255,0.8);
+	box-shadow: rgba(255, 255, 255, 0.5) -1px -1px 5px;
+	position: absolute;
+	animation: snowfall 10s linear infinite;
+}
+@keyframes snowfall {
+  0%{
+	  top:0%;
+  }
+  10%{
+	  left: 51%;
+	  top: 10%;
+  }
+  40%{
+	  left: 49%;
+	  top: 40%;
+  }
+  70%{
+	  left: 51%;
+	  top: 70%;
+  }
+  100%{
+	  top:100%
+  }
+}
